@@ -1,0 +1,30 @@
+{
+  "name": "applitools-eyes-cypress",
+  "version": "1.0.0",
+  "description": "This is a Cypress project to test Applitools Eyes for Vistual Testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlfredPolanco/Applitools-Eyes-Cypress.git"
+  },
+  "keywords": [
+    "QA",
+    "Visual",
+    "Testing",
+    "UI",
+    "Cypress"
+  ],
+  "author": "Alfredo Polanco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlfredPolanco/Applitools-Eyes-Cypress/issues"
+  },
+  "homepage": "https://github.com/AlfredPolanco/Applitools-Eyes-Cypress#readme",
+  "devDependencies": {
+    "@applitools/eyes-cypress": "^3.33.1",
+    "cypress": "^12.14.0"
+  }
+}
