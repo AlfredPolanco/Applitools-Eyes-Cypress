@@ -1,5 +1,6 @@
-describe('Acme Bank Login', ()=> {
+describe('Acme Bank', ()=> {
     beforeEach(() =>{
+        cy.visit(Cypress.env('baseURL'));
         cy.eyesOpen({
             appName: 'ACME Bank',
             testName: Cypress.currentTest.title,
@@ -11,22 +12,16 @@ describe('Acme Bank Login', ()=> {
     });
 
     it('Login to Acme Bank', () =>{
-        cy.visit(Cypress.env('baseURL'));
-
-        cy.eyesOpen({
-            appName: 'ACME Bank',
-            testName: Cypress.currentTest.title,
-        });
-
         cy.eyesCheckWindow({
             tag: "Login page",
             target: 'window',
-            fully: true
+            fully: true,
+            accessibility: [
+                {accessibilityType: 'RegularText', selector: '.auth-header'}
+            ]
         });
 
-        cy.get('#username').type('andy')
-        cy.get('#password').type('i<3pandas')
-        cy.get('#log-in').click()
+        cy.login();
 
         cy.eyesCheckWindow({
             tag: "Main page",
@@ -34,6 +29,5 @@ describe('Acme Bank Login', ()=> {
             fully: true,
             matchLevel: 'Layout'
         });
-
     });
 });

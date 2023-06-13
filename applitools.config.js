@@ -1,5 +1,4 @@
 module.exports = {
-
     // Concurrency refers to the number of visual checkpoints Applitools will perform in parallel.
     // Warning: If you have a free account, then concurrency will be limited to 1.
     testConcurrency: 5,
@@ -9,11 +8,11 @@ module.exports = {
     // To find it: https://applitools.com/tutorials/getting-started/setting-up-your-environment.html
     // If you don't explicitly set the API key here,
     // then the SDK will automatically read the `APPLITOOLS_API_KEY` environment variable to fetch it.
-    apiKey: 'API_KEY_HERE',
+    apiKey: 'APPLITOOLS_API_KEY',
     // A batch is the collection of visual checkpoints for a test suite.
     // Batches are displayed in the Eyes Test Manager, so use meaningful names.
-    batchName: 'Example: Cypress in JavaScript with the Ultrafast Grid',
-
+    batchName: 'Acme Bank: Cypress in JavaScript with the Ultrafast Grid',
+    envName: 'Production',
     // Applitools can run checkpoints for snapshots against any browser in the Ultrafast Grid.
     // This setting defines 5 unique browser configurations to test.
     browser: [
@@ -29,4 +28,4 @@ module.exports = {
         {deviceName: 'Pixel 2', screenOrientation: 'portrait'},
         {deviceName: 'Nexus 10', screenOrientation: 'landscape'},
     ]
-}
+};
