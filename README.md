@@ -15,3 +15,7 @@ Results should be displayed in the https://eyes.applitools.com/
 
 <img width="1728" alt="Screen Shot 2023-06-13 at 9 31 53 PM" src="https://github.com/AlfredPolanco/Applitools-Eyes-Cypress/assets/39679348/0f7f384e-3c1b-4834-800a-0fa6685cc1f2">
 
+# Resources 
+[@applitools/eyes-cypress
+](https://www.npmjs.com/package/@applitools/eyes-cypress#check-window)
+
