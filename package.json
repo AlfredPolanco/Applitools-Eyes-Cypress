@@ -4,7 +4,7 @@
   "description": "This is a Cypress project to test Applitools Eyes for Vistual Testing",
   "main": "index.js",
   "scripts": {
-    "test": "run test"
+    "test": "npx cypress run"
   },
   "repository": {
     "type": "git",
